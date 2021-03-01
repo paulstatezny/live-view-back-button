@@ -7,8 +7,6 @@ defmodule BackButton.Application do
 
   def start(_type, _args) do
     children = [
-      # Start the Ecto repository
-      BackButton.Repo,
       # Start the Telemetry supervisor
       BackButtonWeb.Telemetry,
       # Start the PubSub system
