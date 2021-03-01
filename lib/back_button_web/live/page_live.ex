@@ -26,6 +26,7 @@ defmodule BackButtonWeb.PageLive do
     {:noreply, push_redirect(socket, to: "/#{socket.assigns.number}")}
   end
 
+  @impl true
   def handle_params(_params, _uri, socket) do
     {:noreply, socket}
   end
